@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'directives-demo';
+  condition = false;
+  boxColor = 'lightblue';
+  message = '';
+  
+  toggleCondition() {
+    this.condition = !this.condition;
+  }
+  
+  onClickedOutside() {
+    this.message = 'Clicked outside!';
+    setTimeout(() => this.message = '', 3000);
+  }
 }
