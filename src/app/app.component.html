@@ -30,10 +30,10 @@
   <section>
     <h2>3. Click Outside Directive</h2>
     <p>Click inside or outside the box below:</p>
-    <div (appClickOutside)="onClickedOutside()" class="demo-box clickable">
-      Click outside me
+    <div [appHighlight]="'lightgreen'" (appClickOutside)="onClickedOutside()" (appClickInside)="onClickedInside()" class="demo-box clickable">
+      Click outside me (has both appHighlight and appClickOutside directives)
     </div>
-    <p *ngIf="message" class="message">{{ message }}</p>
+    <p *ngIf="message" [ngClass]="{'message-success': isInside, 'message-error': !isInside}" class="message">{{ message }}</p>
   </section>
 
   <section>

@@ -1,10 +1,19 @@
-# DirectivesDemo
+# Angular Directives Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
+This project demonstrates the implementation and usage of custom Angular directives. It was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
+
+## Custom Directives Included
+
+1. **Highlight Directive** - Changes background color of elements on hover
+2. **Unless Directive** - Structural directive that works opposite to *ngIf
+3. **Click Outside Directive** - Detects clicks inside or outside an element
+4. **Delay Render Directive** - Delays rendering of elements for a specified time
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+Alternatively, you can use `npm run dev` or `npm start` as configured in package.json.
 
 ## Code scaffolding
 
